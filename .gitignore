@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+*.egg-info/
+
+# Data (keep folder structure via .gitkeep)
+backend/data/embeddings/*/
+backend/data/uploads/*
+!backend/data/uploads/.gitkeep
+backend/data/logs/recognition_log.json
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# OS / IDE
+.DS_Store
+.env
+*.log

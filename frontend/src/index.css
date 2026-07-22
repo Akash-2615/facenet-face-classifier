@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --color-ink: #0f1419;
+  --color-ink-muted: #5c6b7a;
+  --color-surface: #f7f8fa;
+  --color-panel: #ffffff;
+  --color-line: #e2e8f0;
+  --color-accent: #0d9488;
+  --color-accent-dark: #0f766e;
+  --color-accent-soft: #ccfbf1;
+  --color-danger: #dc2626;
+  --color-danger-soft: #fee2e2;
+  --color-warn: #d97706;
+  --color-ok: #059669;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--color-ink);
+  background:
+    radial-gradient(ellipse 80% 50% at 10% -10%, #ccfbf1 0%, transparent 55%),
+    radial-gradient(ellipse 60% 40% at 100% 0%, #e0f2fe 0%, transparent 45%),
+    var(--color-surface);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-accent-soft);
+  color: var(--color-ink);
+}
